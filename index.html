@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrationform</title>
+    </head>
+
+    <form action="/process" method="post">
+        <h1> <em>Sign Up Now!</em></h1>
+        <div>
+            <!-- All text input -->
+            <label for = "firstName"> <strong>First Name: *</strong></label> <input type="text" name="first_Name*" id = "firstName" placeholder ="Thorfinn">
+            <br><br>
+            <label for = "lastName"> <strong>Last Name: *</strong> </label> <input type="text" name="last_Name" id = "last_Name" placeholder = "Karlsefni, Son of Thors">
+            <br><br>
+            <label for = "email"> <strong>Email Address: *</strong></label> <input type="text" name="email" id="email" placeholder = "vinlandsaga@askeladd.com">
+            <br><br>
+            <label for = "password"><strong>Password: *</strong></label> <input type="password" name="password" id="password">
+            <br><br>
+            <label for = "confirm_Pass"><strong>Confirm Password: *</strong></label> <input type="password" name="confirm_Pass" id="confirm_Pass">
+            <br><br>
+            <label for = "birthday"><strong>Date of Birth: *</strong></label> <input type="text" name="dob" id="birthday" placeholder = "MM/DD/YY">
+        </div>
+
+        <div>
+            <!-- Checkboxes for gender with textbox for unlisted -->
+            <h4>Gender Identity</h4>
+                <input type="checkbox" name="male" id="male"> <label for="male">Male</label>
+
+                <input type="checkbox" name="female" id="female"> <label for="female">Female</label>
+
+                <input type="checkbox" name="nonbin" id="nonbinary"> <label for="nonbinary">Non-binary</label>
+
+                <input type="checkbox" name="noanswer" id="noanswer"> <label for="noanswer">I prefer not to answer</label>
+                <br> <br>
+                <label for="accept">Not listed</label> <input type="test" name="accept" id="accept">
+        </div>
+
+        <div>
+            <h4><strong>A brief description of myself:</strong></h4>
+            <textarea name="comment" cols="20" rows="3" placeholder = " I enjoy seeking justice for my Father..."></textarea>
+        </div>
+
+        <div>
+            <h4><strong>How many enemies I have:</strong></h4>
+            <select name="enemies">
+                <option value="few">I have a few</option>
+                <option value="moreavg">I have more enemies than the average person</option>
+                <option value="world"> Everyone.</option>
+                <option value="none">I have no enemies. No one in the world is my enemy...</option>
+                <option value="weird">This took a weird turn, I think I need to leave</option>
+                <option value="null">N/A</option>
+            </select>
+        </div>
+        <br>
+        <input type="checkbox" name="updates" id="updates">
+        <label for="updates">Yes, please send me updates!</label>
+        <br>
+        <input type="checkbox" name="ToS" id="terms">
+        <label for="terms">I agree to the aforementioned terms and agreements</label>
+        <br><br>
+        <button value="Create">Create Account</button>
+
+        <h6>* Indicates a required field</h6>
+
+    </form>
+</html>
